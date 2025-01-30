@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+:root{
+    --main-color:#284b63;
+    --secondary-color:#d9d9d9;
+    --other-color:white;
+    --main-font:"Montserrat", serif;
+    --secondary-font:"Montserrat", serif;
+    --third-font:"Stalinist One", serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+html{
+  max-width: 100vw;
+}
+
+body{
+  max-width: 100vw;
+    background-color: #284b63;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background-color: white;
+}
+
+.logo{
+    color: black;
+    text-transform: uppercase;
+    font-family: var(--third-font);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 40px;
+    border-radius: 5px;
+}
+nav{
+    display: flex;
+    gap: 15px;
+}
+
+nav a{
+    color: black;
+    font-family: var(--main-font);
+    text-decoration: none;
+}
+
+button{
+    font-family: var(--main-font);
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    box-shadow:#284b63;
+    outline: none;
+    border: none;
+    color: black;
+    box-shadow: 0px 0px 5px black;
+}
+
+.menu{
+  display: none;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+  }
+h3{
+    text-align: center;
+    margin: 50px auto;
+    font-family: Arial;
+    color: white;
+    font-family: var(--third-font);
+    letter-spacing: 3px;
+}
+.product-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  .product-image {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-family: var(--main-font);
+  }
+  
+  .product-price {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--secondary-font);
+  }
+  
+  .order-button {
+    background-color:#ffffff;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--third-font);
+    align-content: center;
+  }
+
+  .info-buttons{
+    font-family: var(--third-font);
+    cursor: pointer;
+    background-color:#ffffff;
+    color: black;
+    border-radius: 6px;
+    width: 20px;
+    height: 25px;
+  }
+
+  .about{
+    color: gray;
+  }
+
+  .order{
+    color: gray;
+  }
+
+  h1{
+    text-align: center;
+    margin: 50px auto;
+    font-family: Arial;
+    color: white;
+    font-family: var(--main-font);
+    border: 1px solid #ccc;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+  }
+
+  .support{
+    color: gray;
+  }
+
+.support-section form{
+  display: flex;
+  font-family: var(--main-font);
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 20px;
+}
+
+@media screen and (max-width:431px){
+
+header,body,html{
+  overflow-x: hidden;
+}
+
+  nav{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+   
+
+  .product-cards{
+    overflow-x: hidden;
+  }
+ 
+}
+
+.mobile_menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.481);
+  backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  font-family: Arial;
+}
+.mobile_menu a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.mobile_menu a:hover{
+  color: orange}
